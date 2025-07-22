@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Allow requests from Netlify
+CORS(app)  
 
 @app.route('/store', methods=['POST'])
 def store_data():
